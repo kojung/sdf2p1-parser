@@ -6,7 +6,7 @@ description:         This is a simple parser for the SDF version 2.1 using Parse
 license:             MIT
 license-file:        LICENSE
 bug-reports:         mailto:kojung@gmail.com
-homepage:            https://github.com/kojung
+homepage:            https://github.com/kojung/sdf2p1-parser
 author:              Jung Ko
 maintainer:          kojung@gmail.com
 copyright:           Copyright (c) 2015 Jung Ko 
@@ -17,6 +17,10 @@ Stability:           Experimental
 Category:            Text
 Build-type:          Simple
 Extra-source-files:  tests/sdf/sample.sdf
+
+source-repository head
+  type: git
+  location: https://github.com/kojung/sdf2p1-parser
 
 library
   hs-source-dirs:    src
