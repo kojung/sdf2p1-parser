@@ -76,7 +76,7 @@ lazyMany p file contents = lm state0
     where
       Right state0 = parse getParserState file contents
       lm state = case parse p' "" empty of
-                   Left _ -> [] -- | ignore parse errors
+                   Left _ -> [] -- ignore parse errors
                    Right x -> x
           where
             p' = do

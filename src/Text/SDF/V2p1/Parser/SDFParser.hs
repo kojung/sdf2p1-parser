@@ -326,7 +326,7 @@ edge_identifier = try (res "posedge")
     where res r = reserved r *> return r
 
 port_path :: Parser PortPath
-port_path = path -- | The spec say port_path = (port | PATH hchar port), which simplifies to path
+port_path = path -- The spec say port_path = (port | PATH hchar port), which simplifies to path
             
 port :: Parser Port
 port = scalar_port <|> bus_port
